@@ -1,0 +1,28 @@
+.quarantine-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quarantine-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.quarantine-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
